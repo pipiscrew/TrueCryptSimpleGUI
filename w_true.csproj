@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C51629EC-6479-47A0-8E0C-89511E8C7739}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrueCryptSimpleGUI</RootNamespace>
+    <AssemblyName>TrueCryptSimpleGUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>harddisk.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComboBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="connection.cs" />
+    <Compile Include="General.cs" />
+    <Compile Include="MainFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFRM.Designer.cs">
+      <DependentUpon>MainFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RunTool.cs" />
+    <Compile Include="SettingsFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsFRM.Designer.cs">
+      <DependentUpon>SettingsFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings_Chooser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings_Chooser.Designer.cs">
+      <DependentUpon>Settings_Chooser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleExecution.cs" />
+    <EmbeddedResource Include="MainFRM.resx">
+      <DependentUpon>MainFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsFRM.resx">
+      <DependentUpon>SettingsFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings_Chooser.resx">
+      <DependentUpon>Settings_Chooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_new32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hdd81.png" />
+    <None Include="Resources\hdd71.png" />
+    <None Include="Resources\hdd61.png" />
+    <None Include="Resources\hdd41.png" />
+    <None Include="Resources\hdd31.png" />
+    <None Include="Resources\hdd21.png" />
+    <None Include="Resources\hdd11.png" />
+    <None Include="Resources\hdd8.png" />
+    <None Include="Resources\hdd7.png" />
+    <None Include="Resources\hdd6.png" />
+    <None Include="Resources\hdd5.png" />
+    <None Include="Resources\hdd4.png" />
+    <None Include="Resources\hdd3.png" />
+    <None Include="Resources\hdd2.png" />
+    <None Include="Resources\hdd1.png" />
+    <None Include="Resources\edit_32.png" />
+    <None Include="Resources\del_32.png" />
+    <Content Include="harddisk.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
