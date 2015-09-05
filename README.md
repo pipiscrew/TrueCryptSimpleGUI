@@ -1,6 +1,6 @@
 # TrueCryptSimpleGUI
 
-With TrueCrypt you can mount an encrypted file to a new drive. Usually method that used by all file/folder encryption tools. TrueCrypt is freeware, the original GUI has to many options. I would like to open an application, write my password and mount, thats why SimpleGUI created.
+With TrueCrypt you can mount an encrypted file to a new drive. Usually method that used by all file/folder encryption tools. TrueCrypt is freeware, the original GUI has too many options. I would like to open an application, write my password and mount, thats why SimpleGUI created.
 
 
 How to create a container/partition :
