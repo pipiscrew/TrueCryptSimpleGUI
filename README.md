@@ -3,6 +3,7 @@
 ####Tray Icon
 ---------
 Shift + Right Click = Opens Application
+
 Shift + Left Click  = Closes Application, doesnt unount.
 
 ####Command Line Arguments
