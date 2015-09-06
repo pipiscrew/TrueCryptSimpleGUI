@@ -1,6 +1,6 @@
 # TrueCryptSimpleGUI
 
-![alt text](http://www.pipiscrew.com/wp-content/uploads/2015/09/snap234.png"App Screenshot")
+![alt text](http://www.pipiscrew.com/wp-content/uploads/2015/09/snap234.png)
 
 With TrueCrypt you can mount an encrypted file to a new drive. Usually method that used by all file/folder encryption tools. TrueCrypt is freeware, the original GUI has too many options. I would like to open an application, write my password and mount, thats why SimpleGUI created. A front end for TrueCrypt.
 
